@@ -1,0 +1,55 @@
+/* Estilos boton GUARDAR*/
+.btn-guardar{
+    width: 100%;
+    padding: 15px;
+    background-color: #cb2930;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+  }
+  .btn-guardar:hover,.btn-guardar:active{
+    color:#fff;
+    background-color:#13795b;
+    border-color:#13795b;
+  }
+  .btn-guardar:focus{
+    box-shadow:0 0 0 3px rgba(121,82,179,0.25)
+  }
+  .footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #cb2930;
+  }
+  #mainNav .navbar-brand {
+    color: #fff;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #fff;
+}
+.bg-primary {
+  background-color: #1abc9c !important;
+}
+body{
+  padding-top: calc(75);
+  background-image: url("/img/shibuya.png");
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  color: white;
+}
+#chedow{
+  background: rgb(180,58,58);
+background: linear-gradient(180deg, rgba(180,58,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,69,69,1) 100%);
+}

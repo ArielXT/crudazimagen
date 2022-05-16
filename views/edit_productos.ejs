@@ -1,0 +1,51 @@
+<%- include('layout/header') %>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto mt-4">
+            <div class="card shadow">
+                <div class="card-header bg-success">
+                    <h3 class="text-light">Editando Producto: (<%= producto.producto %>)</h3>
+                </div>
+                <div class="card-body p-4">
+                    <form action="/update/<%= producto._id %>" method="post" id="add-form" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="producto">Producto</label>
+                            <input type="text" name="producto" class="form-control form-control-lg"
+                            placeholder="Ingrese Producto" value="<%= producto.producto %>" required/>                            
+                        </div>
+                        <div class="mb-3">
+                            <label for="marca">Marca</label>
+                            <input type="text" name="marca" class="form-control form-control-lg"
+                            placeholder="Ingrese Marca" value="<%= producto.marca %>" required/>                            
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo">Tipo</label>
+                            <input type="text" name="tipo" class="form-control form-control-lg"
+                            placeholder="Ingrese Tipo" value="<%= producto.tipo %>" required/>                            
+                        </div>
+                        <div class="mb-3">
+                            <label for="stock">Stock</label>
+                            <input type="text" name="stock" class="form-control form-control-lg"
+                            placeholder="Ingrese Stock" value="<%= producto.stock %>" required/>                            
+                        </div>
+                        <div class="mb-3">
+                            <label for="precio">Precio</label>
+                            <input type="text" name="precio" class="form-control form-control-lg"
+                            placeholder="Ingrese Precio" value="<%= producto.precio %>" required/>                            
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Selecciona Imagen</label>
+                            <input type="file" name="image" class="form-control form-control-lg" required/>                            
+                            <img src="/<%= producto.image %>" width="100" class="img-thumbnail mt-1"> 
+                        </div>
+                        <input type="hidden" name="old_image" value="<%= producto.image %>">
+                        <div class="mb-3 d-grid">
+                            <input type="submit" name="submit" value="Editar Producto" class="btn btn-success btn-lg"/>                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('layout/footer') %>
